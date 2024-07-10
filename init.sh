@@ -11,6 +11,7 @@ install_general_tools() {
     sudo apt-get install -y git python3 python3-pip wireshark clamav yara chkrootkit rkhunter strace gdb || { echo "Failed to install general tools. Exiting..."; exit 1; }
 }
 
+
 install_elf_tools() {
     echo "Installing ELF analysis tools..."
     sudo apt-get install -y binutils elfutils ltrace patchelf binwalk || { echo "Failed to install ELF tools. Exiting..."; exit 1; }
