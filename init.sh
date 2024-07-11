@@ -123,6 +123,7 @@ cleanup() {
 
 main() {
     update_system
+    instal_no_machine
     install_general_tools
     install_elf_tools
     install_static_analysis_tools
