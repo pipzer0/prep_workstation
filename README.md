@@ -1,6 +1,3 @@
-# prep_workstation
-
-readme_content = """
 # Malware Analysis Tools Installation Script
 
 This script installs a comprehensive set of tools for malware analysis on a Linux system. Below is a detailed description of each tool included in the script and the purpose of each section.
@@ -10,14 +7,15 @@ This script installs a comprehensive set of tools for malware analysis on a Linu
 The script is divided into several functions, each responsible for installing different sets of tools and performing specific tasks:
 
 1. `update_system`: Updates the system package list and upgrades all installed packages.
-2. `install_general_tools`: Installs general malware analysis tools such as Git, Python, Wireshark, ClamAV, YARA, and others.
-3. `install_elf_tools`: Installs tools for analyzing ELF (Executable and Linkable Format) files.
-4. `install_static_analysis_tools`: Installs tools for static analysis of malware.
-5. `install_dynamic_analysis_tools`: Installs tools for dynamic analysis of malware.
-6. `install_pip`: Installs additional Python packages required for malware analysis.
-7. `install_peda_pwndbg_gef`: Installs GDB plugins for enhanced debugging capabilities.
-8. `cleanup`: Placeholder for any cleanup actions that might be necessary after installation.
-9. `main`: The main function that orchestrates the execution of all other functions.
+2. `install_no_machine`: Installs NoMachine for remote desktop access.
+3. `install_general_tools`: Installs general malware analysis tools such as Git, Python, Wireshark, ClamAV, YARA, and others.
+4. `install_elf_tools`: Installs tools for analyzing ELF (Executable and Linkable Format) files.
+5. `install_static_analysis_tools`: Installs tools for static analysis of malware.
+6. `install_dynamic_analysis_tools`: Installs tools for dynamic analysis of malware.
+7. `install_pip`: Installs additional Python packages required for malware analysis.
+8. `install_gdb_plugins`: Installs GDB plugins for enhanced debugging capabilities.
+9. `cleanup`: Placeholder for any cleanup actions that might be necessary after installation.
+10. `main`: The main function that orchestrates the execution of all other functions.
 
 ## Detailed Description of Tools
 
@@ -42,14 +40,12 @@ The script is divided into several functions, each responsible for installing di
 - **patchelf**: A small utility to modify the dynamic linker and RPATH of ELF executables.
 - **binwalk**: A fast, easy-to-use tool for analyzing, reverse engineering, and extracting firmware images.
 - **hexedit**: A command-line hex editor.
-- **objdump**: A program for displaying various information about object files.
 - **nmap**: A network scanning tool used to discover hosts and services on a computer network.
 - **htop**: An interactive process viewer for Unix systems.
 
 ### Static Analysis Tools
 
 - **radare2**: An open-source software for performing binary analysis and reverse engineering.
-- **rizin**: A UNIX-like reverse engineering framework and command-line toolset.
 - **pefile**: A Python module to read and work with Portable Executable (PE) files.
 - **capstone**: A lightweight multi-platform, multi-architecture disassembly framework.
 - **uncompyle6**: A Python cross-version byte-code decompiler.
@@ -73,5 +69,7 @@ The script is divided into several functions, each responsible for installing di
 
 ## How to Run the Script
 
-1. Save the script to a file, e.g., `install_malware_analysis_tools.sh`.
-2. Make the script executable: `chmod +
+1. git clone https://github.com/pipzer0/prep_workstation
+2. Make the script executable: `chmod +x prep_workstation/init.sh`.
+3. Run the script: `prep_workstation/init.sh`.
+ 
